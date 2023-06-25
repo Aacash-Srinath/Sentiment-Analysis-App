@@ -15,7 +15,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 def getReviews(asin):
     # Set up the web driver
     options = webdriver.ChromeOptions()
-    options.add_argument('--disable-gpu')
     options.add_argument('--headless')
     driver = webdriver.Chrome('chromedriver.exe', options=options)
 
