@@ -11,7 +11,8 @@ def getReviews(asin):
     # Set up the web driver
     options = webdriver.ChromeOptions()
     options.add_argument("headless")
-    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+    driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver = webdriver.Chrome(options=options)
 
     # Navigate to the product page
     product_url = f"https://www.amazon.in/dp/{asin}"
