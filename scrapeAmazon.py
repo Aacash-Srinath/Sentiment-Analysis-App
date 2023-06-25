@@ -17,7 +17,7 @@ def getReviews(asin):
     options = webdriver.ChromeOptions()
     options.add_argument('--disable-gpu')
     options.add_argument('--headless')
-    driver = webdriver.Chrome(options=options)
+    driver = webdriver.Chrome('chromedriver.exe', options=options)
 
     # Navigate to the product page
     product_url = f"https://www.amazon.in/dp/{asin}"
