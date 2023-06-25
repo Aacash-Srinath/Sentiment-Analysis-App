@@ -9,7 +9,8 @@ Files:
 #### scrapeAmazon.py
 Uses a Pre-Trained BERT Model and Tokenizer from the Transformers library to perform Sentiment Analysis on a Given Text
 Returns the Sentiment Rating as the Output
-
+...
+...
 > sentimentRating.py
 > - Contains the function **sentimentRating(review)**
 > - Requires Text as Parameter
