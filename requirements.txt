@@ -6,3 +6,4 @@ selenium==4.10.0
 streamlit
 webdriver-manager
 seleniumbase
+chromedriver.exe
