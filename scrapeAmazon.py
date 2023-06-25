@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -10,7 +11,7 @@ def getReviews(asin):
     # Set up the web driver
     options = webdriver.ChromeOptions()
     options.add_argument("headless")
-    driver = webdriver.Chrome(options=options)
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
     # Navigate to the product page
     product_url = f"https://www.amazon.in/dp/{asin}"
