@@ -6,10 +6,9 @@ Files:
 - sentimentRating.py
 - sentiment-app.py
 
-> scrapeAmazon.py
-> - Script for Scraping Reviews of a Product in amazon.in
-> - Requires Product ASIN Value (Amazon Serial Identification Number)
-> - Outputs the Title and Content of Reviews as a DataFrame
+#### scrapeAmazon.py
+Uses a Pre-Trained BERT Model and Tokenizer from the Transformers library to perform Sentiment Analysis on a Given Text
+Returns the Sentiment Rating as the Output
 
 > sentimentRating.py
 > - Contains the function **sentimentRating(review)**
