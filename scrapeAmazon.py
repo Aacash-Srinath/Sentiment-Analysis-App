@@ -7,12 +7,20 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import sys
 
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+
+def get_driver():
+    return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+
 def getReviews(asin):
     # Set up the web driver
-    options = webdriver.ChromeOptions()
-    options.add_argument("headless")
-    driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver = webdriver.Chrome(options=options)
+    options = Options()
+    options.add_argument('--disable-gpu')
+    options.add_argument('--headless')
+    driver = get_driver()
 
     # Navigate to the product page
     product_url = f"https://www.amazon.in/dp/{asin}"
