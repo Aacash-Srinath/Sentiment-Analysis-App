@@ -13,11 +13,11 @@ ____
 - Returns the Sentiment Rating as the Output
 ____
 
-#### 3. sentiment-app.py
+#### 2. sentiment-app.py
 - Python Script for Running the Streamlit App
 - Contains a Text Input Field for Entering Comment
 - Outputs the Sentiment Rating of the Comment between 1 and 5
 ____
 
-#### 4. requirements.txt
+#### 3. requirements.txt
 - Contains All Required Libraries and their Versions
