@@ -21,7 +21,8 @@ ____
 ____
 
 > sentiment-app.py
-> - Python Script for Running the Streamlit App
-> - Contains a Dropdown Box to Choose between Sentiment Analysis of a Text/Comment and Amazon Product Reviews
->   - For Text/Comment: Returns the Sentiment Rating of the Comment
->   - For Amazon Product Reviews: Returns the Mean Sentiment Rating of All Reviews Available (Reviews from India Only)
+- Python Script for Running the Streamlit App
+- Contains a Dropdown Box to Choose between Sentiment Analysis of a Text/Comment and Amazon Product Reviews
+  ![image](https://github.com/Aacash-Srinath/Sentiment-Analysis-App/assets/100955640/d3681f9c-ca04-4121-9964-7a55b4b2c4c2)
+  - For Text/Comment: Returns the Sentiment Rating of the Comment
+  - For Amazon Product Reviews: Returns the Mean Sentiment Rating of All Reviews Available (Reviews from India Only)
