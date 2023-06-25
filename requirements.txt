@@ -4,4 +4,4 @@ numpy==1.23.5
 torch
 selenium==4.10.0
 streamlit
-webdrivermanager
+webdriver-manager
