@@ -14,12 +14,10 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 def getReviews(asin):
     # Set up the web driver
-    def get_driver():
-        return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     options = Options()
     options.add_argument('--disable-gpu')
     options.add_argument('--headless')
-    driver = get_driver()
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
     # Navigate to the product page
     product_url = f"https://www.amazon.in/dp/{asin}"
