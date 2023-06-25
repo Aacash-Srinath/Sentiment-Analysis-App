@@ -9,15 +9,16 @@ Files:
 ____
 
 #### 1. scrapeAmazon.py
+- Uses a the Selenium Library in Python to Web Scrape Reviews of Products from amazon.in
+- Products are Identified Using the ASIN Value (Amazon Serial Identification Number)
+- Scrapes All the Reviews of the Product (If Available) and Compiles it into a Dataframe
+- Returns the DataFrame
+____
+
+#### 2. sentimentRating.py
 - Uses a Pre-Trained BERT Model and Tokenizer from the Transformers library to perform Sentiment Analysis on a Given Text
 - Returns the Sentiment Rating as the Output
-
-
-> sentimentRating.py
-> - Contains the function **sentimentRating(review)**
-> - Requires Text as Parameter
-> - Calculates Sentiment Rating of Given Text
-> - Outputs the Rating of the Given Text
+____
 
 > sentiment-app.py
 > - Python Script for Running the Streamlit App
