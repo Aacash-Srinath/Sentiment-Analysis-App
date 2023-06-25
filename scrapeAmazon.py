@@ -9,7 +9,7 @@ import sys
 def getReviews(asin):
     # Set up the web driver
     options = webdriver.ChromeOptions()
-    options.add_argument("headless")
+    options.addArguments("--headless")
     driver = webdriver.Chrome(options=options)
 
     # Navigate to the product page
