@@ -6,7 +6,6 @@ Files:
 - sentimentRating.py
 - sentiment-app.py
 
-====
 ____
 
 #### 1. scrapeAmazon.py
