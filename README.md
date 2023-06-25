@@ -5,11 +5,12 @@ Files:
 - scrapeAmazon.py
 - sentimentRating.py
 - sentiment-app.py
+- requirements.txt
 
 ____
 
 #### 1. scrapeAmazon.py
-- Uses a the Selenium Library in Python to Web Scrape Reviews of Products from amazon.in
+- Uses the Selenium Library in Python to Web Scrape Reviews of Products from amazon.in
 - Products are Identified Using the ASIN Value (Amazon Serial Identification Number)
 - Scrapes All the Reviews of the Product (If Available) and Compiles it into a Dataframe
 - Returns the DataFrame
@@ -20,9 +21,13 @@ ____
 - Returns the Sentiment Rating as the Output
 ____
 
-> sentiment-app.py
+#### 3. sentiment-app.py
 - Python Script for Running the Streamlit App
 - Contains a Dropdown Box to Choose between Sentiment Analysis of a Text/Comment and Amazon Product Reviews
   ![image](https://github.com/Aacash-Srinath/Sentiment-Analysis-App/assets/100955640/d3681f9c-ca04-4121-9964-7a55b4b2c4c2)
   - For Text/Comment: Returns the Sentiment Rating of the Comment
   - For Amazon Product Reviews: Returns the Mean Sentiment Rating of All Reviews Available (Reviews from India Only)
+____
+
+#### 4. requirements.txt
+- Contains All Required Libraries and their Versions
