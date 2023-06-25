@@ -7,6 +7,7 @@ Files:
 - sentiment-app.py
 
 ====
+____
 
 #### 1. scrapeAmazon.py
 - Uses a Pre-Trained BERT Model and Tokenizer from the Transformers library to perform Sentiment Analysis on a Given Text
