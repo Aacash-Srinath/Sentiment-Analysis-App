@@ -1,6 +1,6 @@
 transformers
 pandas==2.0.2
 numpy==1.23.5
-torch==2.0.2+cu117
+torch
 selenium==4.10.0
 streamlit
